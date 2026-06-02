@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/images/icon.png" rel="icon">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+    <title>Farrel's Portfolio</title>
+</head>
+<body>
+
+<section style="min-height: 100svh; background: #000; display: flex; align-items: center; padding: 5rem 3rem; position: relative; overflow: hidden;">
+  
+  <!-- subtle glow -->
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 70% 50%, rgba(255, 255, 255, 0.097), transparent);pointer-events:none;"></div>
+
+  <div style="max-width:1100px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1;">
+
+    <!-- LEFT -->
+    <div>
+      <h1 style="font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:#fff;line-height:1.1;margin:0 0 1.2rem;">
+        <span id="typed-name"></span><span id="cursor" style="display:inline-block;width:2px;height:1em;background:#fff;margin-left:3px;vertical-align:-0.05em;animation:blink .9s step-end infinite;font-family: monospace;"></span>
+      </h1>
+      <p style="color:#a1a1aa;font-family:monospace;font-size:0.9rem;line-height:1.8;margin:0 0 2rem;">
+        Mechanical Engineer<br>
+        3D CAD Engineer · Production Design Engineering
+      </p>
+      <a href="#projects" style="display:inline-block;border:1px solid rgba(255,255,255,0.3);padding:.7rem 1.6rem;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem;font-family:monospace;transition:background .2s;">
+        View My Work ↓
+      </a>
+    </div>
+
+    <!-- RIGHT -->
+    <div style="position:relative;display:flex;flex-direction:column;gap:1rem;">
+      <!-- ghost initials -->
+      <span style="position:absolute;top:-3rem;right:0;font-family:monospace;font-size:clamp(5rem,12vw,9rem);font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255, 255, 255, 0.507);user-select:none;pointer-events:none;">MF<br>SG</span>
+      
+      <!-- tags -->
+      <div id="tags" style="display:flex;flex-direction:column;gap:.75rem;position:relative;z-index:2;">
+        <div class="tag-row" style="display:flex;align-items:center;gap:.75rem;opacity:0;transform:translateX(16px);transition:opacity .5s, transform .5s;">
+          <span style="font-family:monospace;font-size:.85rem;color:rgba(255, 255, 255, 0.3);width:1.2rem;">01</span>
+          <span style="padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:.75rem;font-family:monospace;background:rgba(255,255,255,0.05);">
+            <span style="display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>3D CAD & CAE
+          </span>
+        </div>
+        <div class="tag-row" style="display:flex;align-items:center;gap:.75rem;opacity:0;transform:translateX(16px);transition:opacity .5s .1s, transform .5s .1s;">
+          <span style="font-family:monospace;font-size:.85rem;color:rgba(255, 255, 255, 0.3);width:1.2rem;">02</span>
+          <span style="padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:.75rem;font-family:monospace;background:rgba(255,255,255,0.05);">
+            <span style="display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Design Analysis
+          </span>
+        </div>
+        <div class="tag-row" style="display:flex;align-items:center;gap:.75rem;opacity:0;transform:translateX(16px);transition:opacity .5s .1s, transform .5s .1s;">
+          <span style="font-family:monospace;font-size:.85rem;color:rgba(255, 255, 255, 0.3);width:1.2rem;">03</span>
+          <span style="padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:.75rem;font-family:monospace;background:rgba(255,255,255,0.05);">
+            <span style="display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Machine & Parts Development
+          </span>
+        </div>
+        <div class="tag-row" style="display:flex;align-items:center;gap:.75rem;opacity:0;transform:translateX(16px);transition:opacity .5s .1s, transform .5s .1s;">
+          <span style="font-family:monospace;font-size:.85rem;color:rgba(255, 255, 255, 0.3);width:1.2rem;">04</span>
+          <span style="padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:.75rem;font-family:monospace;background:rgba(255,255,255,0.05);">
+            <span style="display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Drafting & Technical Drawing
+          </span>
+        </div>
+        <div class="tag-row" style="display:flex;align-items:center;gap:.75rem;opacity:0;transform:translateX(16px);transition:opacity .5s .1s, transform .5s .1s;">
+          <span style="font-family:monospace;font-size:.85rem;color:rgba(255, 255, 255, 0.3);width:1.2rem;">05</span>
+          <span style="padding:.4rem 1rem;border-radius:100px;border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:.75rem;font-family:monospace;background:rgba(255,255,255,0.05);">
+            <span style="display:inline-block;width:6px;height:6px;background:#fff;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Production Design Engineering
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- mobile: stack to single column -->
+<style>
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  @media (max-width: 640px) {
+    #hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+  }
+</style>
+
+<!-- WORKS CARDS PAGE -->
+<section id="projects" class="bg-black py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="mb-12 text-center text-4xl" style="font-family:monospace; color: #fff;">
+      Recent Work
+    </h2>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="PLTPH"
+        data-description="A Portable Pico-Hydro Turbine capable of generating 200W of electricity."
+        >
+            <img src="./src/images/project1.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                PLTPH
+                </h3>
+            </div>
+        </div>
+
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="Curing Conveyor System"
+        data-description="A large scale conveyor system for curing jeans."
+        >
+            <img src="./src/images/project2.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                Curing Conveyor System
+                </h3>
+            </div>
+        </div>
+
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="Solar Panel Frame"
+        data-description="A simple frame made using UNP and Hollow steel to accomodate a small solar panel."
+        >
+            <img src="./src/images/project3.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                Solar Panel Frame
+                </h3>
+            </div>
+        </div>
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="Rotary Table"
+        data-description="A Rotary Table for robot arm to increase available DOFs."
+        >
+            <img src="./src/images/project4.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                Rotary Table
+                </h3>
+            </div>
+        </div>
+
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="Car Body Shell"
+        data-description="A replica of Tushek TS900 shell for a custom car."
+        >
+            <img src="./src/images/project5.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                Car Body Shell
+                </h3>
+            </div>
+        </div>
+
+        <div
+        class="project-card group cursor-pointer overflow-hidden rounded-xl bg-zinc-950 transition duration-300 hover:scale-105"
+        data-title="Gantry Crane"
+        data-description="A large gantry made using multiple H Beams with 6 Ton lifting capacity."
+        >
+            <img src="./src/images/project6.png" class="h-64 w-full object-cover">
+            <div class="p-4 rounded-b-xl border-b-2 border-x-2 border-white">
+                <h3 class="text-lg" style="font-family:monospace; color: #fff;">
+                Gantry Crane
+                </h3>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CARD MODAL POPUP -->
+<div
+  id="modal"
+  class="fixed inset-0 hidden items-center justify-center bg-black/70"
+>
+  <div class="w-full max-w-lg rounded-xl bg-black p-8 border-2 border-white">
+    <h3
+      id="modal-title"
+      class="text-2xl"
+      style="font-family:monospace; color: #fff;"
+    >
+    </h3>
+    <p
+      id="modal-description"
+      class="mt-4"
+      style="font-family:monospace; color: #fff;"
+    >
+    </p>
+    <button
+      id="close-modal"
+      class="mt-6 rounded-lg bg-white px-4 py-2"
+      style="font-family:monospace; color: black;"
+    >
+      Close
+    </button>
+  </div>
+</div>
+
+<script src="./src/js/main.js"></script>
+
+</body>
+
+<footer class="bg-black py-8">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+
+    <!-- Copyright -->
+    <p class="text-sm text-zinc-400">
+      © 2026 Muhammad Farrel Satrya Ganendra. All rights reserved.
+    </p>
+
+    <div class="flex items-center gap-6">
+      <!-- Linkedin Icon -->
+      <a
+        href="https://linkedin.com/in/muhammad-farrel-satrya-ganendra-416595400/"
+        target="_blank"
+        class="text-zinc-400 transition hover:text-white"
+      >
+        <i class="fa-brands fa-linkedin text-xl"></i>
+      </a>
+      <!-- Instagram Icon -->
+      <a
+        href="https://instagram.com/pparadiseorchestra"
+        target="_blank"
+        class="text-zinc-400 transition hover:text-white"
+      >
+        <i class="fa-brands fa-instagram text-xl"></i>
+      </a>
+      <!-- Instagram Icon -->
+      <a
+        href="mailto:mfarrelsatryag@gmail.com"
+        target="_blank"
+        class="text-zinc-400 transition hover:text-white"
+      >
+        <i class="fa-brands fa-google text-xl"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+</html>
